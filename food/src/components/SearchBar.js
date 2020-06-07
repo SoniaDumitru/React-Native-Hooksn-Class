@@ -17,7 +17,7 @@ const SearchBar = ( {term, onTermChange, onTermSubmit }) => {
                     />
         </View>
     );
-};
+}
 
 const styles = StyleSheet.create({
     backgroundStyle: {
