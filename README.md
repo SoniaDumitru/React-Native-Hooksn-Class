@@ -1,7 +1,7 @@
 # React-Native-Hooks-Class
 React Native with Hooks, Context, and React Navigation Udemy.
 
-## First Application: Restaurant Search App
+### First Application: Restaurant Search App
 
 - The application prompts a user with a search bar at the top of the screen and the user can search for a restaurant, 
 once we get the results from the search Yelp API we display the results in three sections on the screen based on restaurant’s prices. 
