@@ -7,7 +7,7 @@ import { Feather } from '@expo/vector-icons';
 import styles from './IndexScreen.styles';
 
 const renderItem = ({ item } , navigation, deleteBlogPost) => {
-  console.log(item)
+ 
   return (
     <TouchableOpacity onPress={() => navigation.navigate('Show', { id: item.id } )}>
       <View style={styles.row}>
