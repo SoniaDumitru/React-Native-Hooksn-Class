@@ -5,9 +5,10 @@ import { Context } from '../context/BlogContext';
 // Styles
 import styles from './BlogPostForm.styles';
 
-const BlogPostForm = () => {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+const BlogPostForm = ({ onSubmit, initialValues }) => {
+
+    const [title, setTitle] = useState(initialValues.title);
+    const [content, setContent] = useState(initialValues.content);
 
     return (
         <View>
@@ -25,13 +26,17 @@ const BlogPostForm = () => {
             />
             <Button 
                 title='Save Blog Post' 
-                onPress = {() => { 
-                        // addBlogPost(title, content, () => navigation.navigate('Index'));
-                    }
-                }
+                onPress = {() => onSubmit(title, content)}
             />
         </View>
     )
+}
+
+BlogPostForm.defaultProps = {
+    initialValues: {
+        title:'',
+        content: '',
+    }
 }
 
 export default BlogPostForm;
