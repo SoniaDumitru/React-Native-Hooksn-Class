@@ -6,26 +6,28 @@ import { Feather } from '@expo/vector-icons';
 // Styles
 import styles from './IndexScreen.styles';
 
-const IndexScreen = () => {
-  const { state, addBlogPost, deleteBlogPost } = useContext(Context);
-
-  const renderItem = ({ item }) => {
-    return (
+const renderItem = ({ item } , navigation, deleteBlogPost) => {
+  return (
+    <TouchableOpacity onPress={() => navigation.navigate('Show', { id: item.id } )}>
       <View style={styles.row}>
         <Text style={styles.title}>{item.title} - {item.id}</Text>
         <TouchableOpacity onPress={() => deleteBlogPost(item.id)}>
           <Feather style={styles.icon} name="trash" />
         </TouchableOpacity>
       </View>
-    );
-  }
+    </TouchableOpacity>
+  );
+}
+
+const IndexScreen = ({ navigation }) => {
+  const { state, addBlogPost, deleteBlogPost } = useContext(Context);
   return (
     <View>
       <Button title="Add Post" onPress={addBlogPost} />
       <FlatList
         data={state}
         keyExtractor={blogPost => blogPost.title}
-        renderItem={(item) => renderItem(item)}
+        renderItem={(item) => renderItem(item, navigation, deleteBlogPost)}
       />
     </View>
   );
