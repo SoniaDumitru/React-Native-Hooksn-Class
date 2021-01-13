@@ -15,3 +15,5 @@ once we get the results from the search Yelp API we display the results in three
 ### Second Application: Blog Creation App
 
 - Inside our app we have a couple of different screens, each of the screens have one very particular job: INDEX < SHOW < CREATE < EDIT 
+
+![alt-text](https://github.com/SoniaDumitru/React-Native-Hooks-Class/blob/master/blog/blog/blog.gif)
