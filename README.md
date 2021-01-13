@@ -18,3 +18,8 @@ once we get the results from the search Yelp API we display the results in three
 - Complete CRUD aplication with JSON server REST Conventions and NGROK setup. 
 
 ![alt-text](https://github.com/SoniaDumitru/React-Native-Hooks-Class/blob/master/blog/blog/blog.gif)
+
+### Third Application: Map App
+- Our app is going to show a map to a user with the current location on the map and record the curent location over time so they can track the path on a long run.
+
+... in progress ...
