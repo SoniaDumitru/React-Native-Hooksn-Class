@@ -11,3 +11,7 @@ once we get the results from the search Yelp API we display the results in three
 - Each of these three different sections scroll horizontally. Once a user taps on a restaurant we are going to take them to a detail page that displays a couple images of the given restaurant. 
 
 <img width="442" alt="Screen Shot 2020-06-15 at 10 21 18 AM" src="https://user-images.githubusercontent.com/44908424/84675576-0eb0ae00-aef2-11ea-9fda-c35867003191.png">
+
+### Second Application: Blog Creation App
+
+- Inside our app we have a couple of different screens, each of the screens have one very particular job: INDEX < SHOW < CREATE < EDIT 
