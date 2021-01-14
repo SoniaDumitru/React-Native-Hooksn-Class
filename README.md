@@ -21,5 +21,6 @@ once we get the results from the search Yelp API we display the results in three
 
 ### Third Application: Map App
 - Our app is going to show a map to a user with the current location on the map and record the curent location over time so they can track the path on a long run.
+- App conatins a custom Express API
 
 ... in progress ...
