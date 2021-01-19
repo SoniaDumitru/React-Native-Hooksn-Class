@@ -8,7 +8,7 @@ const authReducer = (state, action) => {
         case 'add_error': 
             return { ...state, errorMessage: action.payload }
         case 'signup':
-            return { ...state, token: action.payload }
+            return { errorMessage: '', ...state, token: action.payload }
         default: 
             return state;
     }
@@ -16,7 +16,6 @@ const authReducer = (state, action) => {
 
 const signup = (dispatch) => {
     return async ({ email, password }) => {
-        // make an api request to sign up with that email and password
         try {
             const response = await trackerApi.post('/signup', { email, password });
             await AsyncStorage.setItem('token', response.data.token);
