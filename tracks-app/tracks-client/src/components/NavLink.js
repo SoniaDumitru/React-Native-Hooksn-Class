@@ -16,7 +16,7 @@ const NavLink = ({ navigation, text, routeName }) => {
 };
 const styles = StyleSheet.create({
     link: {
-      color: 'green',
+      color: 'blue',
       textAlign: 'center'
     },
   });
