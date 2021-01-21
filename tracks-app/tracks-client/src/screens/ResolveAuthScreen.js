@@ -20,3 +20,5 @@ const ResolveAuthScreen = () => {
     }), [];
     return null;
 };
+
+export default ResolveAuthScreen;
