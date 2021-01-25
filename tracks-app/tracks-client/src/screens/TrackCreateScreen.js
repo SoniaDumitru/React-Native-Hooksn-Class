@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-navigation';
 import Map from '../components/Map';
 import MapView from 'react-native-maps';
 import { requestPermissionsAsync } from 'expo-location';
+import '../_mocklocation';
 
 const TrackCreateScreen = () => {
   const [err, setError] = useState(null);
